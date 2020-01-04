@@ -14,32 +14,29 @@ The data is contained in three files:
 3. transcript.json - records for transactions, offers received, offers viewed, and offers completed
 
 Here is the schema and explanation of each variable in the files:
-1. portfolio.json
+### portfolio.json
 - id (string) - offer id
 - offer_type (string) - type of offer ie BOGO, discount, informational
 - difficulty (int) - minimum required spend to complete an offer
-reward (int) - reward given for completing an offer
-duration (int) - time for offer to be open, in days
-channels (list of strings)
-profile.json
+- reward (int) - reward given for completing an offer
+- duration (int) - time for offer to be open, in days
+- channels (list of strings)
 
-age (int) - age of the customer
-became_member_on (int) - date when customer created an app account
-gender (str) - gender of the customer (note some entries contain 'O' for other rather than M or F)
-id (str) - customer id
-income (float) - customer's income
-transcript.json
+### profile.json
+- age (int) - age of the customer
+- became_member_on (int) - date when customer created an app account
+- gender (str) - gender of the customer (note some entries contain 'O' for other rather than M or F)
+- id (str) - customer id
+- income (float) - customer's income
 
-event (str) - record description (ie transaction, offer received, offer viewed, etc.)
-person (str) - customer id
-time (int) - time in hours since start of test. The data begins at time t=0
-value - (dict of strings) - either an offer id or transaction amount depending on the record
+### transcript.json
+- event (str) - record description (ie transaction, offer received, offer viewed, etc.)
+- person (str) - customer id
+- time (int) - time in hours since start of test. The data begins at time t=0
+- value - (dict of strings) - either an offer id or transaction amount depending on the record
 
 ## Analysis
 The notebook in this repository contains the EDA, Modeling and other operations related to this analysis
 
 ## Observations
-Observations from the analysis are summarized in this article -> https://medium.com/@bharathbommakanti/peek-into-airbnbs-pricing-strategy-for-boston-f091f56f516d
-
-## Acknowledgements
-This dataset is part of Airbnb Inside, and the original source can be found at http://insideairbnb.com/get-the-data.html
+Observations from the analysis are summarized in this article -> https://medium.com/@bharathbommakanti/what-brings-more-bucks-for-starbucks-c4c1111beea9

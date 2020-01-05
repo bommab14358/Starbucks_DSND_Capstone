@@ -5,7 +5,7 @@ Python version - 3.7.1
 Seaborn and Matplotlib
 
 ## Project Motivation
-The project aims to analyze the marketing activity and spend data to understand the impact of different promotional campaigns on customer's spending pattern 
+The project aims to analyze the marketing activity and spend data to understand the impact of different promotional campaigns on customer's spending pattern and to identify recommendations of offers for different demographic groups
 
 ## File Descriptions
 The data is contained in three files:
